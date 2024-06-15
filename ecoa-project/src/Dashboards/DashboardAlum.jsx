@@ -33,10 +33,15 @@ function DashboardAlum() {
 
 
     const fetchGrupos = async (user_id) => {
-        const response = await fetch('http://localhost:3000/grupo/' + user_id);
-        const data = await response.json();
-        console.log(data);
-        setGrupos(data);
+        try{
+            const response = await fetch('http://localhost:3000/grupo/estudiante/' + user_id);
+            const data = await response.json();
+            console.log(data);
+            setGrupos(data);
+        }catch(error){
+            console.log(error)
+        }
+        
         return(data);
 
     };
@@ -98,7 +103,7 @@ function DashboardAlum() {
             </div>
         </div>
         <div class="grid grid-cols-3 mt-5">
-        {materias.map((materia, idx) => (
+        {materias?.map((materia, idx) => (
             <div key = {idx}>
                 {!contestado?(<div></div>
 

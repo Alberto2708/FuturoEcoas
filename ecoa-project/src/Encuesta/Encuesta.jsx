@@ -164,13 +164,11 @@ function Encuesta() {
             },
             body: JSON.stringify(form)
         })
-        console.log(historyAnswers);
-
-        console.log(newQuestion);
+        
+        document.getElementById("chatText").value = "";
 
         return newQuestion;
 
-        //return console.log(res.status)
     };
 
     useEffect(()=>{
@@ -260,6 +258,7 @@ function Encuesta() {
                     <textarea className="w-[90%] h-[90%] ml-2 rounded-xl pt-3 border-1 border-[#FCFBFA]"
                         placeholder="Contestale a Chat..."
                         value = {form.respuesta}
+                        id="chatText"
                         name = "respuesta"
                         onChange = {handleInputChange}
                     />

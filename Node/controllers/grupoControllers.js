@@ -12,6 +12,17 @@ async function getGrupo(req, res) {
     }
 };
 
+async function getGrupoStudent(req, res) {
+    const { student_id } = req.params;
+    try{
+        const UF = await grupoModel.getGrupoStudent(student_id);
+        return res.status(200).json(UF);
+    }catch(error){
+        console.log(error);
+        return res.status(500).send(error);
+    }
+};
+
 async function getGrupoProfe(req, res) {
     const { id } = req.params;
     try{
@@ -26,4 +37,4 @@ async function getGrupoProfe(req, res) {
 
 
 
-module.exports={getGrupo, getGrupoProfe};
+module.exports={getGrupo, getGrupoProfe, getGrupoStudent};

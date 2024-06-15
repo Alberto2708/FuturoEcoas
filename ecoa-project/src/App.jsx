@@ -1,12 +1,10 @@
 import {Routes, Route } from 'react-router-dom';
 import Login from './Login/Login';
-import MiPerfil from './miPerfil/MiPerfil';
 import DashboardAlum from './Dashboards/DashboardAlum';
 import DashboardProf from './Dashboards/DashboardProf';
 import Encuesta from './Encuesta/Encuesta';
 import MateriaCompleta from './Dashboards/MateriaCompleta';
 import Analisis from './Analisis de encuesta/Analisis';
-import EncuestaIndividualExpanded from './Analisis de encuesta/EncuestaIndividualExpanded';
 import StudentList from "./Dashboards/studentList.jsx";
 
 function App() {
