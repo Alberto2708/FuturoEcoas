@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Login from './Login/Login';
-import MiPerfil from './miPerfil/MiPerfil';
 import DashboardAlum from './Dashboards/DashboardAlum';
 import DashboardProf from './Dashboards/DashboardProf';
 import Encuesta from './Encuesta/Encuesta';

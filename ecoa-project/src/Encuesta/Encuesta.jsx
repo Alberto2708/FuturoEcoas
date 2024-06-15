@@ -230,8 +230,6 @@ function Encuesta() {
                     <div className={'flex flex-row'}>
                         <button className={'rounded-lg bg-[#0039A6] w-[126px] h-[48px] text-white mr-10'}>Encuestas
                         </button>
-                            <button className={'rounded-lg bg-transparent w-[126px] h-[48px] text-gray-950'}>Mi Perfil
-                        </button>
                     </div>
 
 
