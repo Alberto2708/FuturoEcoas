@@ -2,9 +2,7 @@ import openailogo from '../Dashboards/Images/openailogo.png';
 import { useEffect, useState } from 'react';
 import ResumenCard from './ResumenCard';
 import EncuestaIndividual from './EncuestaIndividual';
-import CalificacionMateria from './CalificacionMateria';
 import Cookies from 'js-cookie';
-import EncuestaIndividualExpanded from './EncuestaIndividualExpanded';
 
 function Analisis() {
     const [materia, setMateria] = useState({});
@@ -80,8 +78,9 @@ function Analisis() {
                     </div>
                 </div>
             </div>
+
             <div className="flex flex-col">
-                <div className="flex flex-row m-5 h-80">
+                <div className="flex flex-row h-80">
                     <div>
                         <ResumenCard />
                     </div>

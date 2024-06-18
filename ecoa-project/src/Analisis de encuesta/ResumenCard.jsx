@@ -75,9 +75,10 @@ function ResumenCard() {
          getReport();
      }
  },[isFetched])
+
     return (
-        <div >
-            <div  className="m-5 flex flex-col border-2 rounded-xl max-w-5xl h-64 overflow-auto overscroll-auto bg-gray-100 shadow-inner shadow-blue-100">
+        <div className="w-full">
+            <div  className="m-5 flex flex-col border-2 rounded-xl h-64 overflow-auto overscroll-auto bg-gray-100 shadow-inner shadow-blue-100">
                 <div className="mb-5 ml-2">
                     <p className="font-sans font-bold text-2xl text-blue-400">Resumen de encuesta</p>
                 </div>
