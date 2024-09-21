@@ -42,8 +42,8 @@ This project is a proposal for a web application aimed at improving the student 
 
 ## Instructions to run the program:
 
-- Clone the repository to a local folder on your computer using git clone.
-- Open a terminal window for each folder in the repository (node and ecoa-project).
-- In each terminal, run the command npm install.
-- In the server node, run the command node --watch index.js.
-- In the client ecoa-project, run the command npm run dev.
+1. Clone the repository to a local folder on your computer using git clone.
+2. Open a terminal window for each folder in the repository (node and ecoa-project).
+3. In each terminal, run the command npm install.
+4. In the server node, run the command node --watch index.js.
+5. In the client ecoa-project, run the command npm run dev.
