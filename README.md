@@ -33,3 +33,17 @@ This project is a proposal for a web application aimed at improving the student 
 3. **Professor Dashboard**: Professors can view their courses, see which students have completed the surveys, and generate performance reports from the responses.
 4. **Feedback Generation**: A summary of all student responses is compiled using the ChatGPT API, which generates a detailed feedback report for professors.
 
+## Requirements to run the program:
+
+- Having Node.js installed on your computer.
+- Having PostgreSQL, and pgAdmin installed on your computer.
+- Create a database with the username ‘ecoa’ and password ‘ecoa’ named ‘ecoas_db_final’. This can be done using PostgreSQL, and pgAdmin.
+- Restore the ‘ecoas_db_final’ database using the backup located in the ‘database’ folder of the repository.
+
+## Instructions to run the program:
+
+- Clone the repository to a local folder on your computer using git clone.
+- Open a terminal window for each folder in the repository (node and ecoa-project).
+- In each terminal, run the command npm install.
+- In the server node, run the command node --watch index.js.
+- In the client ecoa-project, run the command npm run dev.
